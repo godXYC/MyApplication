@@ -3,6 +3,7 @@ package com.example.wx_demo.myapplication;
 import android.content.Context;
 import android.content.Intent;
 import android.graphics.Color;
+import android.support.v7.app.ActionBar;
 import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -49,6 +50,11 @@ public class UserLoginActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
 
+
+        ActionBar actionBar = getSupportActionBar();
+        if(actionBar != null){
+            actionBar.hide();
+        }
 
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_user_login);
@@ -124,6 +130,11 @@ public class UserLoginActivity extends AppCompatActivity {
                                         System.out.println(jsonObject.get("code"));
                                         if(jsonObject.get("code").equals(1)){
                                             Intent intent = new Intent(UserLoginActivity.this,PersonalCenterActivity.class);
+
+                                            final JSONObject jsonObject1 = new JSONObject(result).getJSONObject("data");
+
+                                            intent.putExtra("userName",username);
+                                            intent.putExtra("userPhone",jsonObject1.get("phoneNumber").toString());
                                             startActivity(intent);
                                         }
                                         else {

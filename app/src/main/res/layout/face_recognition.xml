@@ -7,28 +7,27 @@
 
     <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="44dp"
-        >
+        android:layout_height="50dp"
+        android:background="#000">
+
         <ImageView
-            android:id="@+id/face_close_img"
-            android:layout_width="15dp"
-            android:layout_height="15dp"
-            android:layout_marginLeft="14.5dp"
-            android:layout_marginTop="14.5dp"
-            android:src="@drawable/close"/>
+            android:id="@+id/back_btn"
+            android:layout_width="22dp"
+            android:layout_height="22dp"
+            android:layout_marginLeft="10dp"
+            android:layout_centerVertical="true"
+            android:background="@drawable/back_btn"/>
         <TextView
+            android:id="@+id/title_text"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_centerInParent="true"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"
             android:text="人脸认证"
-            android:textSize="18dp"
-            android:textColor="#222222"/>
-
-        <View
-            android:layout_width="match_parent"
-            android:layout_height="1px"
-            android:layout_alignParentBottom="true"
-            android:background="#ededed" />
+            android:textStyle="bold"
+            android:textColor="#fff"
+            android:textSize="24sp"
+            />
 
     </RelativeLayout>
 

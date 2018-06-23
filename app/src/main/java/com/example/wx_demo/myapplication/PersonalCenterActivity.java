@@ -10,9 +10,13 @@ import android.view.View;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import org.w3c.dom.Text;
+
 public class PersonalCenterActivity extends AppCompatActivity {
 
 
+    TextView nickName;
+    TextView userPhone;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -22,6 +26,13 @@ public class PersonalCenterActivity extends AppCompatActivity {
         if(actionBar != null){
             actionBar.hide();
         }
+
+        nickName = findViewById(R.id.userName);
+        userPhone = findViewById(R.id.userPhone);
+        Intent intent = getIntent();
+
+        nickName.setText(intent.getStringExtra("userName"));
+        userPhone.setText(intent.getStringExtra("userPhone"));
 
         View include1 = findViewById(R.id.include1);
         View include2 = findViewById(R.id.include2);

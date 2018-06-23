@@ -17,7 +17,7 @@ public class FaceActivity extends AppCompatActivity {
         if(actionBar != null){
             actionBar.hide();
         }
-        ImageView face_close_img = findViewById(R.id.face_close_img);
+        ImageView face_close_img = findViewById(R.id.back_btn);
         face_close_img.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

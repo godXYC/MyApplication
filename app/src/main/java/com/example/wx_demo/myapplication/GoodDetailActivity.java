@@ -64,7 +64,7 @@ public class GoodDetailActivity extends AppCompatActivity {
         adapter = new ParameterAdapter(productParameterModuleList);
         recyclerView.setAdapter(adapter);
 
-        ImageView good_detail_close_img = findViewById(R.id.good_detail_close_img);
+        ImageView good_detail_close_img = findViewById(R.id.back_btn);
         good_detail_close_img.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

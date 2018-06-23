@@ -36,7 +36,7 @@ public class CreditGradeActivity extends AppCompatActivity {
         recyclerView.setAdapter(adapter);
 
 
-        ImageView credit_grade_close_img = findViewById(R.id.credit_grade_close_img);
+        ImageView credit_grade_close_img = findViewById(R.id.back_btn);
         credit_grade_close_img.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

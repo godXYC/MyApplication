@@ -3,7 +3,30 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#000">
+        <ImageView
+            android:id="@+id/back_btn"
+            android:layout_width="22dp"
+            android:layout_height="22dp"
+            android:layout_marginLeft="10dp"
+            android:layout_centerVertical="true"
+            android:background="@drawable/back_btn"/>
+        <TextView
+            android:id="@+id/title_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"
+            android:text="商品详情"
+            android:textStyle="bold"
+            android:textColor="#fff"
+            android:textSize="24sp"
+            />
 
+    </RelativeLayout>
     <com.example.wx_demo.myapplication.MyScrollview
         android:layout_width="fill_parent"
         android:layout_height="match_parent"
@@ -12,33 +35,7 @@
             android:orientation="vertical"
             android:layout_height="wrap_content"
             android:layout_width="fill_parent">
-            <RelativeLayout
-                android:layout_width="match_parent"
-                android:layout_height="44dp">
 
-                <ImageView
-                    android:id="@+id/good_detail_close_img"
-                    android:layout_width="15dp"
-                    android:layout_height="15dp"
-                    android:layout_marginLeft="14.5dp"
-                    android:layout_marginTop="14.5dp"
-                    android:src="@drawable/close" />
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_centerInParent="true"
-                    android:text="商品详情"
-                    android:textColor="#222222"
-                    android:textSize="18dp" />
-
-                <View
-                    android:layout_width="match_parent"
-                    android:layout_height="1px"
-                    android:layout_alignParentBottom="true"
-                    android:background="#ededed" />
-
-            </RelativeLayout>
 
             <RelativeLayout
                 android:layout_width="match_parent"
@@ -120,12 +117,17 @@
 
             </RelativeLayout>
 
-            <android.support.v7.widget.RecyclerView
-                android:id="@+id/good_recyclerView"
+            <RelativeLayout
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_below="@id/tem_parameter"
-                android:layout_marginTop="15dp"/>
+                android:layout_height="wrap_content"
+                android:descendantFocusability="blocksDescendants">
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/good_recyclerView"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="15dp"/>
+            </RelativeLayout>
+
 
         </LinearLayout>
 

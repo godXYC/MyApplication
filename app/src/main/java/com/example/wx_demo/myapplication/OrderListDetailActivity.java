@@ -69,7 +69,7 @@ public class OrderListDetailActivity extends AppCompatActivity {
 
         });
 
-        ImageView good_detail_close_img = findViewById(R.id.close_img);
+        ImageView good_detail_close_img = findViewById(R.id.back_btn);
         good_detail_close_img.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

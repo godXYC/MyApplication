@@ -91,7 +91,7 @@ public class MyOrderActivity extends AppCompatActivity {
 
             });
 
-        ImageView close_img = findViewById(R.id.order_close_img);
+        ImageView close_img = findViewById(R.id.back_btn);
         close_img.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
