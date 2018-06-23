@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="64dp">
+
+    <ImageView
+        android:id="@+id/personal_head_img"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_marginLeft="24dp"
+        android:layout_centerVertical="true"
+        android:background="@drawable/icon_phone" />
+
+    <TextView
+        android:id="@+id/personal_option_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="人脸认证"
+        android:layout_toRightOf="@id/personal_head_img"
+        android:layout_marginLeft="16dp"
+        android:layout_centerVertical="true"
+        android:textColor="#222222"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/personal_status_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="未认证"
+        android:layout_marginLeft="60dp"
+        android:layout_centerVertical="true"
+        android:gravity="center_vertical"
+        android:layout_toLeftOf="@id/personal_arrow_img"
+        android:layout_marginRight="16dp"
+        android:textColor="#aaaaaa"
+        android:textSize="16sp" />
+
+    <ImageView
+        android:id="@+id/personal_arrow_img"
+        android:layout_width="17dp"
+        android:layout_height="17dp"
+        android:adjustViewBounds="true"
+        android:background="@drawable/btn_arrow_right_gray"
+        android:gravity="center_vertical"
+        android:layout_centerVertical="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="24dp"
+        android:maxHeight="10dp"
+        android:maxWidth="10dp" />
+
+</RelativeLayout>

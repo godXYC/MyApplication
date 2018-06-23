@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        >
+        <ImageView
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:layout_marginLeft="14.5dp"
+            android:layout_marginTop="14.5dp"
+            android:src="@drawable/close"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="信用等级"
+            android:textSize="18dp"
+            android:textColor="#222222"/>
+
+        <View
+            android:id="@+id/view"
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_alignParentBottom="true"
+            android:background="#ededed" />
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/profile_img"
+            android:layout_width="44dp"
+            android:layout_height="44dp"
+            android:src="@drawable/img"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="16dp"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="14sp"
+            android:textColor="#222222"
+            android:text="Angelababy"
+            android:layout_below="@id/profile_img"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="12dp"/>
+        <ImageView
+            android:id="@+id/background_img"
+            android:layout_width="250dp"
+            android:layout_height="150dp"
+            android:background="@drawable/bronze_background"
+            android:layout_below="@id/profile_img"
+            android:layout_marginTop="45dp"
+            android:layout_centerHorizontal="true"
+            />
+
+        <TextView
+            android:id="@+id/member_grade_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="青铜会员"
+            android:textColor="#ffffff"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:layout_alignLeft="@id/background_img"
+            android:layout_alignTop="@id/background_img"
+            android:layout_marginTop="24dp"
+            android:layout_marginLeft="24dp"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="您拥有：77信用值"
+            android:textSize="14sp"
+            android:textColor="#fff"
+            android:layout_below="@id/member_grade_name"
+            android:layout_alignLeft="@id/background_img"
+            android:layout_marginLeft="24dp"
+            android:layout_marginTop="16dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="再获取233信用值升级为白银会员"
+            android:textSize="12sp"
+            android:textColor="#ffffff"
+            android:layout_alignBottom="@id/background_img"
+            android:layout_alignRight="@id/background_img"
+            android:layout_marginBottom="16dp"
+            android:layout_marginRight="16dp"/>
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_marginTop="36dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recycler_view_privilege"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+        </android.support.v7.widget.RecyclerView>
+    </RelativeLayout>
+
+
+</LinearLayout>

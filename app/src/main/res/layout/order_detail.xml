@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        >
+        <ImageView
+            android:id="@+id/close_img"
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:layout_marginLeft="14.5dp"
+            android:layout_marginTop="14.5dp"
+            android:src="@drawable/close"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="订单详情"
+            android:textSize="18dp"
+            android:textColor="#222222"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_alignParentBottom="true"
+            android:background="#ededed" />
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="111dp">
+        <TextView
+            android:id="@+id/price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="￥202.04"
+            android:textSize="28sp"
+            android:textStyle="bold"
+            android:layout_marginTop="20dp"
+            android:textColor="#222222"
+            android:layout_centerHorizontal="true"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="付款金额"
+            android:layout_below="@+id/price"
+            android:layout_marginTop="15dp"
+            android:textColor="#aaaaaa"
+            android:textSize="14sp"
+            android:layout_centerHorizontal="true"/>
+    </RelativeLayout>
+
+    <!--<RelativeLayout-->
+        <!--android:layout_marginBottom="16dp"-->
+        <!--android:id="@+id/detail_relative"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="72dp">-->
+
+        <!--<ImageView-->
+            <!--android:id="@+id/good_img"-->
+            <!--android:layout_width="72dp"-->
+            <!--android:layout_height="72dp"-->
+            <!--android:src="@drawable/goods_img_1"-->
+            <!--android:layout_marginLeft="24dp"-->
+            <!--/>-->
+        <!--<TextView-->
+            <!--android:id="@+id/good_message"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:text="9月份农夫山泉nfc芒果饮料300ml*24瓶"-->
+            <!--android:layout_toRightOf="@+id/good_img"-->
+            <!--android:layout_marginLeft="16dp"-->
+            <!--android:maxWidth="176dp"-->
+            <!--android:textSize="16sp"-->
+            <!--android:textStyle="bold"-->
+            <!--android:lineSpacingExtra="6dp"-->
+            <!--android:textColor="#222222"-->
+
+            <!--/>-->
+        <!--<TextView-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:text="X1"-->
+            <!--android:layout_alignParentRight="true"-->
+            <!--android:layout_marginRight="24dp"-->
+            <!--android:textColor="#666666"-->
+            <!--/>-->
+
+        <!--<LinearLayout-->
+            <!--android:layout_alignParentBottom="true"-->
+            <!--android:layout_marginLeft="112dp"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content">-->
+
+            <!--<TextView-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_below="@+id/good_message"-->
+                <!--android:layout_toRightOf="@+id/good_img"-->
+                <!--android:text="￥118.00"-->
+                <!--android:textColor="#f4523b"-->
+                <!--android:textSize="14dp"-->
+                <!--android:textStyle="bold" />-->
+            <!--<TextView-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_marginLeft="8dp"-->
+                <!--android:text="￥129.00"/>-->
+        <!--</LinearLayout>-->
+
+
+
+    <!--</RelativeLayout>-->
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/order_detail_recycler_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    </android.support.v7.widget.RecyclerView>
+
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_alignParentBottom="true"
+        android:background="#ededed" />
+
+    <RelativeLayout
+        android:paddingTop="16dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="24dp"
+                android:textSize="14sp"
+                android:textColor="#aaaaaa"
+                android:text="订单编号"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="24dp"
+                android:textSize="14sp"
+                android:textColor="#aaaaaa"
+                android:text="201701234100011001"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="24dp"
+                android:layout_marginTop="32dp"
+                android:textSize="14sp"
+                android:textColor="#aaaaaa"
+                android:text="交易时间"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:text="2017/10/27 17:50:35"
+                android:layout_marginTop="32dp"
+                android:textSize="14sp"
+                android:textColor="#aaaaaa"
+                android:layout_marginRight="24dp"
+                />
+
+    </RelativeLayout>
+
+
+</LinearLayout>

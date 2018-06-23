@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    android:background="#000">
+
+
+    <ImageView
+        android:layout_width="22dp"
+        android:layout_height="22dp"
+        android:layout_centerVertical="true"
+        android:background="@drawable/title_close"/>
+
+    <!--<TextView-->
+        <!--android:id="@+id/title_button"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_marginLeft="25dp"-->
+        <!--android:layout_centerVertical="true"-->
+        <!--android:text="返回"-->
+        <!--android:textSize="20sp"-->
+        <!--android:textColor="#fff"/>-->
+
+
+    <TextView
+        android:id="@+id/title_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:text="个人中心"
+        android:textStyle="bold"
+        android:textColor="#fff"
+        android:textSize="24sp"
+        />
+    <!--<TextView-->
+        <!--android:id="@+id/title_edit"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:text="···"-->
+        <!--android:textStyle="bold"-->
+        <!--android:textSize="35sp"-->
+        <!--android:layout_centerVertical="true"-->
+        <!--android:layout_alignParentRight="true"-->
+        <!--android:layout_marginRight="20dp"-->
+        <!--android:textColor="#fff"-->
+        <!--/>-->
+</RelativeLayout>
