@@ -8,15 +8,14 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
-import android.view.MotionEvent;
 import android.view.View;
 import android.widget.ImageView;
 import android.widget.RelativeLayout;
 import android.widget.Toast;
 
-import com.example.wx_demo.module.MyOrderBriefModule;
+import com.example.wx_demo.adapter.MyOrderAdapter;
+import com.example.wx_demo.adapter.MyOrderBriefAdapter;
 import com.example.wx_demo.module.MyOrderModule;
-import com.example.wx_demo.module.MyOrderMonthModule;
 import com.example.wx_demo.util.HttpUtil;
 import com.example.wx_demo.util.TimedDisposeUtil;
 

@@ -10,10 +10,11 @@ import android.view.View;
 import android.widget.ImageView;
 import android.widget.TextView;
 
+import com.example.wx_demo.adapter.ParameterAdapter;
 import com.example.wx_demo.module.ProductParameterModule;
+import com.example.wx_demo.tools.FullyLinearLayoutManager;
 import com.example.wx_demo.util.HttpUtil;
 
-import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
 

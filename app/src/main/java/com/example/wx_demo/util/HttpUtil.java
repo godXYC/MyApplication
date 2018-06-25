@@ -14,7 +14,7 @@ import java.util.Map;
 
 public class HttpUtil {
 
-    private static String LOC_URL = "http://192.168.30.245:8080";
+    private static String LOC_URL = "http://192.168.30.172:8080";
     private static URL url;
 
     public HttpUtil() {

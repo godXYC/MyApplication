@@ -1,4 +1,4 @@
-package com.example.wx_demo.myapplication;
+package com.example.wx_demo.tools;
 
 import android.content.Context;
 import android.graphics.Rect;
@@ -7,6 +7,8 @@ import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.util.Log;
 import android.view.View;
+
+import com.example.wx_demo.myapplication.BuildConfig;
 
 import java.lang.reflect.Field;
 /**

@@ -1,4 +1,4 @@
-package com.example.wx_demo.myapplication;
+package com.example.wx_demo.tools;
 
 import android.content.Context;
 import android.util.AttributeSet;
